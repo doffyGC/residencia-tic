@@ -1,8 +1,8 @@
 {
   "scripts": {
     "dist": "tsup src",
-    "dev": "tsx src/server.ts",
-    "watch": "tsx watch src/server.ts",
+    "dev": "tsx server.ts",
+    "watch": "tsx watch server.ts",
     "start:dist": "npm run dist && node dist/src/index.js"
   },
   "dependencies": {
