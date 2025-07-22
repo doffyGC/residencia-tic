@@ -1,10 +1,9 @@
 import { Router } from "express";
+import { getUser } from "../controllers/userController";
 
 const router = Router();
 
 // Teste de rota
-router.get("/getUser", (req, res) => {
-    res.json({ message: "User data retrieved successfully" });
-});
+router.get("/getUser", getUser);
 
 export default router;
