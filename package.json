@@ -3,7 +3,7 @@
     "dist": "tsup src",
     "dev": "tsx server.ts",
     "watch": "tsx watch server.ts",
-    "start:dist": "npm run dist && node dist/src/index.js"
+    "start:dist": "npm run dist && node dist/app.js"
   },
   "dependencies": {
     "dotenv": "^17.0.1",
