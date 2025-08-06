@@ -1,2 +1,13 @@
+# Dependências
 node_modules/
+
+# Pasta de build (gerada automaticamente)
+dist/
+
+# Arquivos de ambiente (contêm segredos e nunca devem ser enviados)
 .env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
