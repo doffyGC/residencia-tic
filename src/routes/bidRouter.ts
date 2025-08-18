@@ -1,7 +1,8 @@
 import { Router } from "express"; 
+import { getBidForDate } from "../controllers/bidController";
 
 const router = Router();
 
-router.get("/getBid", (req, res) => {
-    res.json({ message: "Bid data retrieved successfully" });
-});
+router.get("/getBidByDate", getBidForDate);
+
+export default router;

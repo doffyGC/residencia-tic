@@ -1,5 +1,6 @@
 import express from 'express';
 import userRouter from './routes/userRouter';
+import bidRouter from './routes/bidRouter';
 
 class App {
 
@@ -14,8 +15,8 @@ class App {
      * Configura as rotas da aplicação
      */
     routes() {
-        // TODO configurar o resto das rotas
         this.app.use("/user/", userRouter);
+        this.app.use("/bid/", bidRouter); 
     }
 }
 
