@@ -1,8 +1,12 @@
 import { Router } from "express";
-import { getUser } from "../controllers/userController";
+import { getUserById, createUser } from "../controllers/userController";
 
 const router = Router();
 
-router.get("/getUser", getUser);
+// Rotas GET
+router.get("/getUserById", getUserById);
+
+// Rotas POST
+router.post("/createUser", createUser);
 
 export default router;
