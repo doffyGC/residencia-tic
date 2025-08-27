@@ -8,7 +8,15 @@ class App {
 
     constructor() {
         this.app = express();
+        this.config();
         this.routes();
+    }
+
+    /**
+     * Configura o middleware para interpretar JSON
+     */
+    config() {
+        this.app.use(express.json());
     }
 
     /**
