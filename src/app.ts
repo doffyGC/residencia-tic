@@ -1,6 +1,7 @@
 import express from 'express';
 import userRouter from './routes/userRouter';
 import bidRouter from './routes/bidRouter';
+import emailRouter from "./routes/emailRouter";
 
 class App {
 
@@ -25,6 +26,7 @@ class App {
     routes() {
         this.app.use("/user/", userRouter);
         this.app.use("/bid/", bidRouter); 
+        this.app.use("/email/", emailRouter);
     }
 }
 
